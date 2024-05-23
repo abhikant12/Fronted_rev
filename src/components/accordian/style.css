@@ -1,0 +1,21 @@
+  .accordian {
+    width: 500px;
+    margin: 10px auto;
+  }
+  
+  .item {
+    background: #614101;
+    margin-bottom: 10px;
+    padding: 5px 25px;
+    color: rgb(14, 219, 24);
+     
+  }
+  
+  .title {
+    color: #16e4d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
