@@ -1,9 +1,11 @@
 import './App.css';
 import Accordian from './components/accordian';
 import TabTest from './components/custom-tab';
+import GithubProfileFinder from './components/github-profile-finder';
 import ImageSlider from './components/Images-slider';
 import LightDarkMode from './components/light-dark-mode';
 import LoadMoreData from './components/load-more-data';
+import ModalTest from './components/model-popup';
 import QRCodeGenerator from './components/qr-code-generator';
 import RandomColor from './components/random-color';
 import ScrollIndicator from './components/scroll-indicator';
@@ -25,8 +27,10 @@ function App() {
         <TreeView data = {menus} />
         <QRCodeGenerator/>
         <LightDarkMode/>
-        <ScrollIndicator/> */}
+        <ScrollIndicator/>
         <TabTest/>
+        <ModalTest/> */}
+        <GithubProfileFinder/>
 
     </div>
   );

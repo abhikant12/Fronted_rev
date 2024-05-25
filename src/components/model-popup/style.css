@@ -1,0 +1,83 @@
+.modal {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  background-color: #baf005;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  background-color: #fefefe;
+  border: 1px solid red;
+  animation: animateModal 0.5s ease-in-out;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;                                 /* Vertically center items */
+  justify-content: space-between;                      /* Distribute space between items */
+  padding: 0px 16px;
+  height: 25%;
+  background-color: #5cb85c;
+  color: #fff;
+  position: relative;
+}
+
+.header_label {
+  position: absolute;
+  left: 50%;                                
+  transform: translateX(-50%);
+}
+
+.close-modal-icon {
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: auto;    
+}
+
+.body {
+  padding: 0px 16px;
+  height: 50%;
+}
+
+.footer {
+  background-color: #5cb85c;
+  flex-grow: 1;
+}
+
+/* Keyframes for modal animation */
+@keyframes animateModal {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+
+
+/*
+left: 50%; moves the element So that its left edge is in the middle of the container. means left edges or left side or starting point of element is at middle of container/box;
+transform: translateX(-50%); then shifts the element back to the left by half of its own width, aligning its center with the center of the container.
+
+This is one way to center a div;
+
+Footer Flex Grow: flex-grow: 1 is kept for the .footer to fill the remaining vertical space within .modal-content.
+*/
