@@ -1,0 +1,58 @@
+.wrapper {
+    padding: 28px;
+  }
+  
+  .heading {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin-bottom: 12px;
+  }
+  
+  .tab-item {
+    display: inline-flex;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: black solid 2px;
+    border-radius: 10px;
+    color: #fff;
+    background: #4e016a;
+  }
+  
+  .tab-item.active {
+    border-color: #000;
+    background: #a1d600;
+    color: black;
+  }
+  
+  .content {
+    padding: 20px 10px;
+    height: 300px;
+    overflow: auto;
+    background-color: #fff;
+  }
+
+
+
+  /*
+  here if we write class like :- 
+  .active {
+    border-color: #000;
+    background: #a1d600;
+    color: black;
+  }
+
+  then black color is not applied to the tab because of Specificity;
+  Specificity: In CSS, selectors with higher specificity take precedence over those with lower specificity. The selector .tab-item.active is more specific
+  than .active, which means it will override styles defined by the .tab-item class.
+  
+  or otherwise we can also write like below, This will force the styles to be applied.
+  .active {
+  border-color: #000 !important;
+  background: #a1d600 !important;
+  color: black !important;
+}
+*/
