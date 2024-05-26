@@ -1,0 +1,74 @@
+.search-autocomplete-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.content{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listcontainer {
+    list-style-type: none;
+    padding: 0;                           /* Remove default padding */ 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list {
+    background-color: green;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+}
+
+
+/*
+1)align-items(cross-axis) :- The align-items property in CSS is used to define the default behavior for how flex items are aligned along the cross axis of the current 
+line of a flex container. means Centers items "vertically" if the "flex direction is row" and Centers items "horizontally" if the "flex direction is column".
+
+Values:
+flex-start: Items are aligned at the start of the cross axis.
+flex-end: Items are aligned at the end of the cross axis.
+center: Items are centered along the cross axis.
+baseline: Items are aligned such that their baselines align.
+stretch: Items are stretched to fill the flex container (default).
+
+
+2) justify-content(main-axis) : The justify-content property in CSS is used to define the alignment along the main axis of the current line of the flex container. 
+This property helps distribute the space between and around flex items along the main axis. means Centers items "horizontally" if the "flex direction is row" and
+Centers items "vertically" if the "flex direction is column".
+
+Values:
+flex-start: Items are packed toward the start of the main axis.
+flex-end: Items are packed toward the end of the main axis.
+center: Items are centered along the main axis.
+space-between: Items are evenly distributed in the line; first item is on the start line, last item on the end line.
+space-around: Items are evenly distributed with equal space around them.
+space-evenly: Items are distributed so that the spacing between any two items (and the space to the edges) is equal.
+
+
+ex : -                        // default flex direction is "row";
+.container {
+    display: flex; 
+    justify-content: center;                    //  Center items horizontally 
+    align-items: center;                       //    Center items vertically 
+    height: 100vh;                             //  Full viewport height to visualize vertical centering 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;                       // Sets the main axis to be vertical 
+    justify-content: center;                      // Centers items vertically 
+    align-items: center;                          // Centers items horizontally 
+    height: 100vh;                                //Full height to visualize vertical centering 
+}
+
+
+// if the item is not getting center within a container then try to remove default padding :-  padding: 0;
+*/

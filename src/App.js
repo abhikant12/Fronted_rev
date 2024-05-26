@@ -9,7 +9,9 @@ import ModalTest from './components/model-popup';
 import QRCodeGenerator from './components/qr-code-generator';
 import RandomColor from './components/random-color';
 import ScrollIndicator from './components/scroll-indicator';
+import SearchAutocomplete from './components/search-autocomplete-withapi';
 import StarRating from './components/Star-rating';
+import TicTacToe from './components/tic-tac-toe';
 import TreeView from './components/tree-view';
 import menus from './components/tree-view/data';
 
@@ -29,8 +31,10 @@ function App() {
         <LightDarkMode/>
         <ScrollIndicator/>
         <TabTest/>
-        <ModalTest/> */}
+        <ModalTest/>
         <GithubProfileFinder/>
+        <SearchAutocomplete/>   */}
+        <TicTacToe/>
 
     </div>
   );
